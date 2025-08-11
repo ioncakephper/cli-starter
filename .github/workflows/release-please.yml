@@ -1,0 +1,28 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with: # Invalid action input 'package-name'
+          release-type: node
+          # package-name: "@ioncakephper/cli-starter"
+          # changelog-path: CHANGELOG.md
+          # You can customize the commit message for the release PR
+          # release-as: "major" # Uncomment to force a major release
+          # default-branch: main # Default is main, but good to be explicit
+
+      - name: Publish to npm
+        if: ${{ steps.release.outputs.releases_created }}
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

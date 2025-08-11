@@ -1,0 +1,41 @@
+{
+  "name": "@ioncakephper/cli-starter",
+  "version": "0.1.0",
+  "description": "cli starter",
+  "bin": {
+    "cli-starter": "./bin/cli-starter.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./bin/cli-starter.js"
+  },
+  "author": "ioncakephper",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/cli-starter.git"
+  },
+  "keywords": [
+    "cli",
+    "javascript",
+    "commander"
+  ],
+  "homepage": "https://github.com/ioncakephper/cli-starter#readme",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/cli-starter/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.4",
+    "jest": "^30.0.5",
+    "semantic-release": "^24.2.7"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  }
+}

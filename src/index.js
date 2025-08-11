@@ -20,9 +20,8 @@ function createProgram() {
     return null; // Do not create program if package.json is missing
   }
   const program = new Command();
-  program
-    .version(packageJson.version)
-    .description(packageJson.description);
+  // console.log(`CLI version: ${packageJson.version}`);
+  program.version(packageJson.version).description(packageJson.description);
   return program;
 }
 

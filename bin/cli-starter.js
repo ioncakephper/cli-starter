@@ -4,5 +4,6 @@
 // It should import and execute the main logic from index.js.
 
 const { run } = require('../index.js');
+// console.log('Starting CLI...');
 
 run();

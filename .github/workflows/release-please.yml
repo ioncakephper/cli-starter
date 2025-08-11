@@ -13,11 +13,11 @@ jobs:
         id: release
         with: 
           release-type: node
-          package-name: "@ioncakephper/cli-starter"
-          changelog-path: CHANGELOG.md
+          # package-name: "@ioncakephper/cli-starter"
+          # changelog-path: CHANGELOG.md
           # You can customize the commit message for the release PR
           # release-as: "major" # Uncomment to force a major release
-          # default-branch: main # Default is main, but good to be explicit
+          default-branch: main # Default is main, but good to be explicit
 
       - name: Publish to npm
         if: ${{ steps.release.outputs.releases_created }}

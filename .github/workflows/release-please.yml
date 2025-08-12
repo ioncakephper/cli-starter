@@ -12,6 +12,9 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to retrieve all commits
       - uses: googleapis/release-please-action@v4
         id: release
         with:
@@ -24,6 +27,7 @@ jobs:
 
       - name: Publish to npm
         if: ${{ steps.release.outputs.releases_created }}
+        working-directory: .
         run: |
           npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
           npm publish

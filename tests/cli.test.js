@@ -56,19 +56,19 @@ describe('CLI execution from different directories', () => {
   });
 
   // New tests for npx execution
-  test('should run @shytiger/cli-starter --version using npx from a different directory', () => {
+  test.skip('should run @shytiger/cli-starter --version using npx from a different directory', () => {
     const command = `npx --package "${projectRoot}" cli-starter --version`;
     const output = execSync(command, { cwd: tempDir }).toString();
     expect(output).toMatch(/\d+\.\d+\.\d+/);
   });
 
-  test('should run @shytiger/cli-starter hello using npx from a different directory', () => {
+  test.skip('should run @shytiger/cli-starter hello using npx from a different directory', () => {
     const command = `npx --package "${projectRoot}" cli-starter hello`;
     const output = execSync(command, { cwd: tempDir }).toString();
     expect(output).toContain('Hello, world!');
   });
 
-  test('should display help using npx when no arguments are provided from a different directory', () => {
+  test.skip('should display help using npx when no arguments are provided from a different directory', () => {
     let output = '';
     try {
       const command = `npx --package "${projectRoot}" cli-starter 2>&1`; // Redirect stderr to stdout

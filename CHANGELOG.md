@@ -2,7 +2,6 @@
 
 ## 1.0.0 (2025-08-12)
 
-
 ### Features
 
 * Add CLI structure, release workflow, and contributing guide ([4731d56](https://github.com/ioncakephper/cli-starter/commit/4731d56eda209ce96ca8ccc730cf84c6ea2adaac))

@@ -9,10 +9,10 @@ A starter template for building command-line interface (CLI) applications with N
 
 ## Key Features
 
-*   **Robust CLI Foundation**: Built with Commander.js for easy command definition, option parsing, and help generation.
-*   **Graceful Error Handling**: Safely handles missing `package.json` by providing informative messages and exiting cleanly.
-*   **Cross-Platform Compatibility**: Designed to run seamlessly on various operating systems.
-*   **Testable Structure**: Includes Jest for unit and integration testing, ensuring reliability.
+* **Robust CLI Foundation**: Built with Commander.js for easy command definition, option parsing, and help generation.
+* **Graceful Error Handling**: Safely handles missing `package.json` by providing informative messages and exiting cleanly.
+* **Cross-Platform Compatibility**: Designed to run seamlessly on various operating systems.
+* **Testable Structure**: Includes Jest for unit and integration testing, ensuring reliability.
 
 ## Installation
 

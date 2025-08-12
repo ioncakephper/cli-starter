@@ -28,6 +28,17 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "devDependencies": {
     "jest": "^30.0.5"
   },

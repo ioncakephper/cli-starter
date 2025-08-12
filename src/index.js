@@ -1,5 +1,6 @@
 const { Command } = require('commander');
 const path = require('path');
+const fs = require('fs');
 
 function getPackageJson() {
   try {
@@ -14,20 +15,43 @@ function getPackageJson() {
   }
 }
 
+function loadCommands(program, commandsDir) {
+  const files = fs.readdirSync(commandsDir);
+
+  for (const file of files) {
+    const filePath = path.join(commandsDir, file);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isDirectory()) {
+      loadCommands(program, filePath); // Recursively load commands from subdirectories
+    } else if (file.endsWith('.js')) {
+      const commandModule = require(filePath);
+      if (typeof commandModule === 'function') {
+        commandModule(program); // Invoke the exported function with the program object
+      }
+    }
+  }
+}
+
 function createProgram() {
   const packageJson = getPackageJson();
   if (!packageJson) {
     return null; // Do not create program if package.json is missing
   }
   const program = new Command();
-  // console.log(`CLI version: ${packageJson.version}`);
   program
     .version(packageJson.version)
-    .description(packageJson.description);
-  program
-    .option('--debug', 'enable debug mode')
-    .option('-v, --verbose', 'enable verbose output')
-    .option('--silent', 'disable all output');
+    .description(packageJson.description)
+    .configureHelp({ // Apply to top-level program
+      sortSubcommands: true,
+      sortOptions: true,
+    });
+
+  // Load global options (if any) - currently none explicitly defined here
+  // program
+  //   .option('--debug', 'enable debug mode')
+  //   .option('-v, --verbose', 'enable verbose output')
+  //   .option('--silent', 'disable all output');
 
   return program;
 }
@@ -38,29 +62,9 @@ function run() {
     process.exit(1); // Exit if program could not be created
   }
 
-  program
-    .command('hello [name]')
-    .description('Say hello to someone')
-    .configureHelp({
-      sortSubcommands: true,
-      sortOptions: true,
-    })
-    .action((name = 'world') => {
-      console.log(`Hello, ${name}!`);
-    });
-
-  program
-    .command("init")
-    .description("Initialize a new project")
-    .alias("i")
-    .option("-q, --quick", "Quick initialization without prompts")
-    .configureHelp({
-      sortSubcommands: true,
-      sortOptions: true,
-    })
-    .action(() => {
-      console.log("Project initialized!");
-    });
+  // Load commands dynamically
+  const commandsDir = path.join(__dirname, 'commands');
+  loadCommands(program, commandsDir);
 
   try {
     program.parse(process.argv);

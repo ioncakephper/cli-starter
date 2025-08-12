@@ -21,7 +21,9 @@ function createProgram() {
   }
   const program = new Command();
   // console.log(`CLI version: ${packageJson.version}`);
-  program.version(packageJson.version).description(packageJson.description);
+  program
+    .version(packageJson.version)
+    .description(packageJson.description);
   program
     .option('--debug', 'enable debug mode')
     .option('-v, --verbose', 'enable verbose output')

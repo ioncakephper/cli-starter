@@ -1,4 +1,5 @@
 // src/utils/applyDescriptionFormatting.js
+
 /**
  * @file Utility function for applying consistent description formatting across Commander.js elements.
  */

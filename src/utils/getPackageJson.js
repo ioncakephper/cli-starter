@@ -1,4 +1,5 @@
 // src/utils/getPackageJson.js
+
 /**
  * @file Utility function to retrieve package.json content.
  */

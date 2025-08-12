@@ -1,0 +1,1 @@
+module.exports = jest.fn((program) => program.command('mocked-command'));

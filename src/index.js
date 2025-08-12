@@ -1,4 +1,5 @@
 // src/index.js
+
 /**
  * @file This is the main entry point for the CLI application.
  * It sets up the Commander.js program, loads commands dynamically,

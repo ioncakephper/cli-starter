@@ -1,4 +1,4 @@
-# @shytiger/cli-starter
+# CLI Starter
 
 [![npm version](https://img.shields.io/npm/v/@shytiger/cli-starter.svg)](https://www.npmjs.com/package/@shytiger/cli-starter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

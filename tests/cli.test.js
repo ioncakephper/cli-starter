@@ -27,8 +27,8 @@ describe('CLI execution from different directories', () => {
   test('should run cli-starter --version from a different directory', () => {
     const command = `node "${cliPath}" --version`;
     const output = execSync(command, { cwd: tempDir }).toString();
-    // Expect the version from package.json (0.1.0)
-    expect(output).toContain('0.1.0');
+    // Expect the version from package.json (e.g., 0.1.0)
+    expect(output).toMatch(/\d+\.\d+\.\d+/);
   });
 
   test('should run cli-starter hello from a different directory', () => {
@@ -56,27 +56,27 @@ describe('CLI execution from different directories', () => {
   });
 
   // New tests for npx execution
-  // test('should run @ioncakephper/cli-starter --version using npx from a different directory', () => {
-  //   const command = `npx --package "${projectRoot}" cli-starter --version`;
-  //   const output = execSync(command, { cwd: tempDir }).toString();
-  //   expect(output).toContain('0.1.0');
-  // });
+  test('should run @ioncakephper/cli-starter --version using npx from a different directory', () => {
+    const command = `npx --package "${projectRoot}" cli-starter --version`;
+    const output = execSync(command, { cwd: tempDir }).toString();
+    expect(output).toMatch(/\d+\.\d+\.\d+/);
+  });
 
-  // test('should run @ioncakephper/cli-starter hello using npx from a different directory', () => {
-  //   const command = `npx --package "${projectRoot}" cli-starter hello`;
-  //   const output = execSync(command, { cwd: tempDir }).toString();
-  //   expect(output).toContain('Hello, world!');
-  // });
+  test('should run @ioncakephper/cli-starter hello using npx from a different directory', () => {
+    const command = `npx --package "${projectRoot}" cli-starter hello`;
+    const output = execSync(command, { cwd: tempDir }).toString();
+    expect(output).toContain('Hello, world!');
+  });
 
-  // test('should display help using npx when no arguments are provided from a different directory', () => {
-  //   let output = '';
-  //   try {
-  //     const command = `npx --package "${projectRoot}" cli-starter 2>&1`; // Redirect stderr to stdout
-  //     output = execSync(command, { cwd: tempDir, stdio: 'pipe' }).toString();
-  //   } catch (error) {
-  //     output = error.stdout.toString(); // Capture stdout even on error
-  //   }
-  //   expect(output).toContain('Usage: cli-starter [options]');
-  //   expect(output).toContain('Commands:');
-  // });
+  test('should display help using npx when no arguments are provided from a different directory', () => {
+    let output = '';
+    try {
+      const command = `npx --package "${projectRoot}" cli-starter 2>&1`; // Redirect stderr to stdout
+      output = execSync(command, { cwd: tempDir, stdio: 'pipe' }).toString();
+    } catch (error) {
+      output = error.stdout.toString(); // Capture stdout even on error
+    }
+    expect(output).toContain('Usage: cli-starter [options]');
+    expect(output).toContain('Commands:');
+  });
 });

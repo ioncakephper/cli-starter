@@ -59,11 +59,10 @@ Once installed, you can use `@shytiger/cli-starter` in several ways:
 ### Global Command
 
 ```bash
-cli-starter hello
-# Output: Hello, world!
-
-cli-starter hello Alice
-# Output: Hello, Alice!
+cli-starter hello [name]
+# Say hello to someone. If no name is provided, it defaults to "world".
+# Output: Hello, world! (if no name)
+# Output: Hello, Alice! (if name is Alice)
 
 cli-starter --version
 # Output: 0.1.0
@@ -77,11 +76,10 @@ cli-starter --help
 If you have `npx` installed (comes with npm 5.2+), you can run the CLI without global installation:
 
 ```bash
-npx @shytiger/cli-starter hello
-# Output: Hello, world!
-
-npx @shytiger/cli-starter hello Bob
-# Output: Hello, Bob!
+npx @shytiger/cli-starter hello [name]
+# Say hello to someone. If no name is provided, it defaults to "world".
+# Output: Hello, world! (if no name)
+# Output: Hello, Bob! (if name is Bob)
 
 npx @shytiger/cli-starter --version
 # Output: 0.1.0
@@ -95,11 +93,9 @@ npx @shytiger/cli-starter --help
 If you have cloned the repository and installed dependencies locally:
 
 ```bash
-node bin/cli-starter.js hello
-# Output: Hello, world!
-
-node bin/cli-starter.js hello Alice
-# Output: Hello, Alice!
+node bin/cli-starter.js hello [name]
+# Output: Hello, world! (if no name)
+# Output: Hello, Alice! (if name is Alice)
 
 node bin/cli-starter.js --version
 # Output: 0.1.0
@@ -107,6 +103,50 @@ node bin/cli-starter.js --version
 node bin/cli-starter.js --help
 # Displays help information
 ```
+
+## CLI Reference
+
+This section provides a detailed overview of `cli-starter` commands and their available options.
+
+### Global Options
+
+These options can be used with any command.
+
+* `-V, --version`: Output the current version of the CLI.
+  * **Example**: `cli-starter --version`
+* `-h, --help`: Display help information for the CLI or a specific command.
+  * **Example**: `cli-starter --help`
+  * **Example (for a command)**: `cli-starter hello --help`
+
+### Commands
+
+#### `hello [name]`
+
+Say hello to someone. If no name is provided, it defaults to "world".
+
+* **Arguments**:
+  * `[name]` (optional): The name of the person to greet.
+* **Options**:
+  * (No specific options for this command yet)
+* **Examples**:
+  * `cli-starter hello`
+    * Output: `Hello, world!`
+  * `cli-starter hello Alice`
+    * Output: `Hello, Alice!`
+
+#### `init` or `i`
+
+Initialize a new project.
+
+* **Arguments**:
+  * (No specific arguments for this command)
+* **Options**:
+  * `-q, --quick`: Quick initialization without prompts.
+* **Examples**:
+  * `cli-starter init`
+    * Output: `Project initialized!`
+  * `cli-starter i --quick`
+    * Output: `Project initialized!`
 
 ## Contributing
 

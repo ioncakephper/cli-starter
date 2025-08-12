@@ -1,5 +1,5 @@
 {
-  "name": "@ioncakephper/cli-starter",
+  "name": "@shytiger/cli-starter",
   "version": "1.2.0",
   "description": "cli starter",
   "bin": {

@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/ioncakephper/cli-starter/compare/v1.0.0...v1.1.0) (2025-08-12)
+
+
+### Features
+
+* Add npm publish step to release workflow ([31d4770](https://github.com/ioncakephper/cli-starter/commit/31d47707db4ce8946d2db3c6202b30bf24f2b575))
+* Add npm publish step to release workflow ([adae384](https://github.com/ioncakephper/cli-starter/commit/adae384285e7a67a55f23608b48935476afc73d1))
+* Configure release-please action for npm publishing ([277d22e](https://github.com/ioncakephper/cli-starter/commit/277d22eba07aa5b0e4248f9f87f3c411ddeb8c53))
+* Disable npm publish in release workflow ([efc82f8](https://github.com/ioncakephper/cli-starter/commit/efc82f89c6a2fc482a59fc7fc080dabf82603e9f))
+
 ## 1.0.0 (2025-08-12)
 
 ### Features

@@ -22,6 +22,11 @@ function createProgram() {
   const program = new Command();
   // console.log(`CLI version: ${packageJson.version}`);
   program.version(packageJson.version).description(packageJson.description);
+  program
+    .option('--debug', 'enable debug mode')
+    .option('-v, --verbose', 'enable verbose output')
+    .option('--silent', 'disable all output');
+
   return program;
 }
 
@@ -34,8 +39,25 @@ function run() {
   program
     .command('hello [name]')
     .description('Say hello to someone')
+    .configureHelp({
+      sortSubcommands: true,
+      sortOptions: true,
+    })
     .action((name = 'world') => {
       console.log(`Hello, ${name}!`);
+    });
+
+  program
+    .command("init")
+    .description("Initialize a new project")
+    .alias("i")
+    .option("-q, --quick", "Quick initialization without prompts")
+    .configureHelp({
+      sortSubcommands: true,
+      sortOptions: true,
+    })
+    .action(() => {
+      console.log("Project initialized!");
     });
 
   try {

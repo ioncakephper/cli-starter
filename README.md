@@ -1,9 +1,9 @@
 # @shytiger/cli-starter
 
-[![npm version](https://badge.fury.io/js/@shytiger/cli-starter.svg)](https://badge.fury.io/js/@shytiger/cli-starter)
+[![npm version](https://img.shields.io/npm/v/@shytiger/cli-starter.svg)](https://www.npmjs.com/package/@shytiger/cli-starter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://example.com/your-build-status-link) <!-- Placeholder -->
-[![npm downloads](https://img.shields.io/npm/dm/@shytiger/cli-starter.svg)](https://www.npmjs.com/package/@shytiger/cli-starter) <!-- Placeholder -->
+[![Build Status](https://img.shields.io/badge/build-unknown-lightgrey.svg)](https://github.com/shytiger/cli-starter/actions)
+[![npm downloads](https://img.shields.io/npm/dm/@shytiger/cli-starter.svg)](https://www.npmjs.com/package/@shytiger/cli-starter)
 
 A starter template for building command-line interface (CLI) applications with Node.js and Commander.js.
 

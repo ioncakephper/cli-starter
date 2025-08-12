@@ -1,7 +1,7 @@
 {
   "name": "@shytiger/cli-starter",
   "version": "1.2.0",
-  "description": "cli starter",
+  "description": "Build powerful and reliable command-line tools with this comprehensive Node.js CLI starter kit.",
   "bin": {
     "cli-starter": "bin/cli-starter.js"
   },

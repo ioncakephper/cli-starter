@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ioncakephper/cli-starter/compare/v1.1.0...v1.2.0) (2025-08-12)
+
+
+### Features
+
+* **release:** configure release-please to checkout full history and publish to npm ([16e5a18](https://github.com/ioncakephper/cli-starter/commit/16e5a18cc2b623ac72ceedd6563d3613c1233c52))
+
 ## [1.1.0](https://github.com/ioncakephper/cli-starter/compare/v1.0.0...v1.1.0) (2025-08-12)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ioncakephper/cli-starter/compare/v1.2.0...v1.2.1) (2025-08-12)
+
+
+### Bug Fixes
+
+* **bin:** Update bin path in package.json ([6603fd3](https://github.com/ioncakephper/cli-starter/commit/6603fd3493b8038b6489013b6da9e3a7143932f2))
+
 ## [1.2.0](https://github.com/ioncakephper/cli-starter/compare/v1.1.0...v1.2.0) (2025-08-12)
 
 

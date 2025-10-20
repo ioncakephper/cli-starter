@@ -203,8 +203,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 <!-- end-doc-gen -->
 
-## Helper Scripts
-
-The repository comes with scripts that help with repository management and development. 
-
-

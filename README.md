@@ -192,7 +192,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
     │   │   ├── getPackageJson.test.js (1.8 KB)
     │   │   └── loadCommands.test.js (1.8 KB)
     │   └── cli.test.js (3.2 KB)
-    ├── CHANGELOG.md (3.3 KB)
+    ├── CHANGELOG.md (3.8 KB)
     ├── CODE_OF_CONDUCT.md (4.8 KB)
     ├── CONTRIBUTING.md (2.1 KB)
     ├── index.js (157 B)

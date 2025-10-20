@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/ioncakephper/cli-starter/compare/v1.3.0...v1.4.0) (2025-10-20)
+
+
+### Features
+
+* add silent option alias and automate README structure ([7957413](https://github.com/ioncakephper/cli-starter/commit/7957413e1b4b336b66ab195198d1e90ada3ce13a))
+* add silent option alias and automate README structure ([36a702c](https://github.com/ioncakephper/cli-starter/commit/36a702caee631712a314e8531b01e2fd288cd174))
+
 ## [1.3.0](https://github.com/ioncakephper/cli-starter/compare/v1.2.1...v1.3.0) (2025-08-12)
 
 

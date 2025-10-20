@@ -41,7 +41,8 @@
     "CHANGELOG.md"
   ],
   "devDependencies": {
-    "jest": "^30.0.5"
+    "jest": "^30.0.5",
+    "markdown-magic-scripts": "^1.4.0"
   },
   "dependencies": {
     "commander": "^14.0.0"

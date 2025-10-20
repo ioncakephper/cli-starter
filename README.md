@@ -7,8 +7,6 @@
 
 A starter template for building command-line interface (CLI) applications with Node.js and Commander.js.
 
-
-
 ## Key Features
 
 * **Robust CLI Foundation**: Built with Commander.js for easy command definition, option parsing, and help generation.
@@ -198,9 +196,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
     ├── index.js (157 B)
     ├── jest.config.js (99 B)
     ├── LICENSE (1.1 KB)
-    ├── markdown-magic.config.js (23 B)
-    ├── package-lock.json (160.3 KB)
-    ├── package.json (1.1 KB)
-    └── README.md (6.6 KB)
+    ├── markdown-magic.config.js (155 B)
+    ├── package-lock.json (148.8 KB)
+    ├── package.json (1.2 KB)
+    └── README.md (6.8 KB)
 ```
 <!-- end-doc-gen -->
+
+## Helper Scripts
+
+The repository comes with scripts that help with repository management and development. 
+
+

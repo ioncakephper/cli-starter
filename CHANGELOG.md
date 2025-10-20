@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/ioncakephper/cli-starter/compare/v1.2.1...v1.3.0) (2025-08-12)
+
+
+### Features
+
+* Add modular command loading ([c989cb0](https://github.com/ioncakephper/cli-starter/commit/c989cb0e892059ae8d0ad6318c45dbd05c44cae7))
+* Enhance CLI with global options ([ecfbcf5](https://github.com/ioncakephper/cli-starter/commit/ecfbcf53d7dc1d989699f7f1cef9414facb17c60))
+* Enhance CLI with global options and init command ([d59bac1](https://github.com/ioncakephper/cli-starter/commit/d59bac1f963752e4b9b194068f1b77231e164c07))
+* Enhance CLI with global options and init command ([4faa783](https://github.com/ioncakephper/cli-starter/commit/4faa783109ea8360c3915a555442164665ddb600))
+* Implement modular command loading ([5cca867](https://github.com/ioncakephper/cli-starter/commit/5cca8679f7dd7bcdfbbc72910242e5a583a4b1fc))
+* Implement modular command loading ([90c90f7](https://github.com/ioncakephper/cli-starter/commit/90c90f7b3687cbddde50a91f74fba8311ee12982))
+
 ## [1.2.1](https://github.com/ioncakephper/cli-starter/compare/v1.2.0...v1.2.1) (2025-08-12)
 
 

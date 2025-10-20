@@ -7,6 +7,8 @@
 
 A starter template for building command-line interface (CLI) applications with Node.js and Commander.js.
 
+
+
 ## Key Features
 
 * **Robust CLI Foundation**: Built with Commander.js for easy command definition, option parsing, and help generation.
@@ -161,3 +163,44 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 **[ioncakephper](https://github.com/ioncakephper)**
+
+## Repository Structure
+
+<!-- doc-gen fileTree maxDepth=5 showSize=true -->
+```
+└── cli-starter/
+    ├── bin/
+    │   └── cli-starter.js (218 B)
+    ├── src/
+    │   ├── commands/
+    │   │   ├── hello.js (293 B)
+    │   │   └── init.js (364 B)
+    │   ├── utils/
+    │   │   ├── applyDescriptionFormatting.js (1.4 KB)
+    │   │   ├── createProgram.js (1.3 KB)
+    │   │   ├── formatDescription.js (640 B)
+    │   │   ├── getPackageJson.js (839 B)
+    │   │   └── loadCommands.js (1.2 KB)
+    │   └── index.js (1 KB)
+    ├── tests/
+    │   ├── utils/
+    │   │   ├── __mocks__/
+    │   │   │   └── commandModule.js (73 B)
+    │   │   ├── applyDescriptionFormatting.test.js (2.8 KB)
+    │   │   ├── createProgram.test.js (2.2 KB)
+    │   │   ├── formatDescription.test.js (1.2 KB)
+    │   │   ├── getPackageJson.test.js (1.8 KB)
+    │   │   └── loadCommands.test.js (1.8 KB)
+    │   └── cli.test.js (3.2 KB)
+    ├── CHANGELOG.md (3.3 KB)
+    ├── CODE_OF_CONDUCT.md (4.8 KB)
+    ├── CONTRIBUTING.md (2.1 KB)
+    ├── index.js (157 B)
+    ├── jest.config.js (99 B)
+    ├── LICENSE (1.1 KB)
+    ├── markdown-magic.config.js (23 B)
+    ├── package-lock.json (160.3 KB)
+    ├── package.json (1.1 KB)
+    └── README.md (6.6 KB)
+```
+<!-- end-doc-gen -->

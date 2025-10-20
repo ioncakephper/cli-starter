@@ -24,7 +24,7 @@ function createProgram() {
   program
     .option("--debug", "enable debug mode")
     .option("-v, --verbose", "enable verbose output")
-    .option("--silent", "disable all output")
+    .option("-q, --silent", "disable all output")
     .configureHelp({
       sortSubcommands: true,
       sortOptions: true,

@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "docs": "npx markdown-magic@3.7.0 README.md --config markdown-magic.config.js",
     "start": "node ./bin/cli-starter.js"
   },
   "author": "ioncakephper",
